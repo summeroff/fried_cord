@@ -1,20 +1,61 @@
 \documentclass[12pt]{book}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{csquotes}
-\usepackage{hyperref}
-\usepackage{parskip}
-
-\title{The Fried Cord}
-\author{[Summeroff]}
-\date{}
+\usepackage{fontspec}
+\setmainfont{Noto Serif} % Clean, readable serif font with Cyrillic support
+\setsansfont{Roboto} % Modern sans-serif for headings
+\usepackage[utf8]{inputenc} % Ensures proper character encoding
+\usepackage{titlesec} % Customizes chapter and section titles
+\titleformat{\chapter}[display]
+    {\normalfont\Large\bfseries\sffamily} % Sans-serif, bold, large chapter titles
+    {\chaptertitlename\ \thechapter}{1em}{\Huge} % Spacing and size adjustments
+\titleformat{\part}[display]
+    {\normalfont\Huge\bfseries\sffamily} % Prominent part titles for trilogy structure
+    {\partname\ \thepart}{20pt}{\Huge}
+\usepackage{geometry} % Modern page layout
+\geometry{a4paper, margin=2.5cm} % Narrower margins for a contemporary look
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear default settings
+\fancyhead[LE,RO]{\thepage} % Page numbers on outer edges
+\renewcommand{\headrulewidth}{0pt} % No header rule for minimalism
+\fancypagestyle{plain}{ % Style for chapter opening pages
+    \fancyhf{}
+    \fancyfoot[C]{\thepage} % Page number centered at bottom
+    \renewcommand{\headrulewidth}{0pt}
+}
+\usepackage{csquotes} % For proper quotation formatting
+\usepackage{hyperref} % For clickable links in PDF
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
 
 \begin{document}
 
-\maketitle
-\tableofcontents
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    {\fontsize{48}{60}\selectfont The Fried Cord\par} % Large, bold title
+    \vspace{2cm}
+    {\Large Summeroff\par} % Author name in a clean size
+\end{titlepage}
+\clearpage
 
+\chapter*{Content Warning}
+This book contains material that may be disturbing or triggering for some readers, including:
+\begin{itemize}
+    \item Graphic violence and death
+    \item Themes of bodily transformation and loss of autonomy
+    \item Strong language and gritty urban settings
+    \item Depictions of authoritarian enforcement and chaos
+    \item Disorienting technological and existential shifts
+\end{itemize}
+These elements are purely fictional and do not reflect the author’s personal views. Reader discretion is advised.
+\clearpage
+\tableofcontents
+\clearpage
+
+\part{Static Ignition}
 \chapter{The Taste of Midnight}
 \section{Alley Drop}
 
@@ -591,5 +632,297 @@ Lena’s legs buckled, static screaming---\textit{Burn---live---burn}---and she 
 The enforcer advanced, beam locking her chest---``Target down, terminate''---but she shoved herself up, swaying, sparks snapping weak. She’d shorted a district, lit a fire she couldn’t quench, and the kid’s charred face burned in her mind---dead because of her, like the vagrant, like the scavenger. The static chanted---\textit{Bridge---live---bridge}---and her eyes stung, black streaks threading her sight. She wasn’t human anymore; she was a goddamn storm, breaking everything she touched.
 
 The rifle whirred, a whine of death, and Lena stumbled back, sparks trailing. The alley was a tomb---lights out, drones grounded, enforcers closing---and she was the spark that’d lit it all. She had to move, had to live, even if it meant burning more. The static laughed, cold and vast, as she turned and ran, blood and guilt heavy on her heels.
+
+\chapter{The Forked Ones}
+\section{Squat Wake}
+
+Lena woke with a jolt---sparks snapping from her hand, frying a rusted pipe inches from her face. She was sprawled on a sagging cot, the air thick with mildew and motor oil, concrete cracked beneath her boots. Her head pounded, static a dull throb, and her arm throbbed worse---blood crusted the gash, black streaks threading her sleeve. She sat up, vision swimming, and wiped her nose---black crust flaked off, fresh red dripping now. The alley, the kid’s charred body, the blackout---it all crashed back, guilt clawing her gut like a blade.
+
+Voices murmured nearby---gruff, urgent, not enforcers. She blinked, clocking her company: five figures, ragged and wrong, watching her from the squat’s shadows. A tall one stepped forward---broad, half her face metal, one eye a glowing slit, voice like gravel through a filter.
+
+``Name’s Anya,'' she said, arms crossed, metal cheek glinting under a flickering bulb. ``You’re the blackout girl. Fried half Moscow’s grid---nice trick. Nearly got you nabbed.''
+
+Lena’s throat burned, voice hoarse. ``Didn’t ask for a rescue. Who the hell are you?'' Her hand twitched, sparks snapping faint---blue, unsteady---ready to fry if they moved wrong.
+
+``Forked,'' Anya said, gesturing to the crew. A skinny guy in the corner---\emph{Twitch}---circuits tracing his arms, twitching like a live wire. A woman---\emph{Kat}---sharpened a mechanical claw on a whetstone, eyes glinting with edge. Two others, hooded---\emph{Hood} and \emph{Grit}---glowed faintly under rags, silent but tense. ``Same pill, same shit,'' Anya went on. ``You’re just louder about it.''
+
+Lena scanned them---freaks, like her, half-human, half-something else. Twitch’s circuits sparked, Kat’s claw clicked, Hood’s glow pulsed---mutations, raw and real. Her own hands buzzed, skin tight, and the static whispered---\emph{Live---bridge---live}.
+
+``What’s it doing to us?'' she asked, voice low, dreading the answer.
+
+Anya crouched, eye whirring as it focused. ``Lunar split---two futures. Meat stays meat, machine goes next-level. We’re the glitch, stuck between. It’s culling us---or testing us. You pick.'' She tapped her metal cheek, a hollow clang. ``This wasn’t a choice. You took the pill, though. Makes you special, blackout girl.''
+
+``Didn’t choose shit,'' Lena snapped, sparks flaring---blue arcs frying a cot spring, smoke curling. Twitch flinched, Kat grinned, Grit’s glow pulsed. ``Some asshole named Wire fed it to me. Said I’m a prototype---bridge, whatever. Now I’m frying kids and bleeding black.''
+
+Anya snorted, standing. ``Wire’s a ghost story---lunar dropout, fed us crumbs ‘til he vanished. If you’re his project, you’re screwed worse than us. That blackout? Lit us up---enforcers are sweeping hard now, cleaning out glitches like roaches.'' She cracked her metal knuckles, a sharp ping. ``You’re a fuckin’ magnet, drawing ‘em right to you.''
+
+The static pulsed, Wire’s voice faint---\emph{Keep going}---and Lena’s gut twisted. She’d lit the grid, sure, but she hadn’t meant to drag these freaks into it---or the kid, or the vagrant. ``So what?'' she said, voice hard. ``You gonna ditch me, or use me?''
+
+Anya’s eye narrowed, glowing slit flickering. ``Use you. You’re a spark plug---we’ve got a shot to hit back. Relay tower, central grid. Jam the signal, slow their rollout. You in, or you out?''
+
+Lena’s hand sparked, static chanting---\emph{Fight---live---fight}. The kid’s charred face flashed---guilt, rage, all of it churning. She didn’t trust Anya, didn’t trust any of them, but sitting still meant dying---or worse, ascending. ``In,'' she growled, sparks snapping. ``But I’m not your damn weapon.''
+
+Anya smirked, metal face glinting. ``We’ll see.''
+
+\section{Fork Lore}
+
+Lena leaned against the squat’s cracked wall, sparks snapping faint from her hands, lighting the gloom in jittery bursts. The crew watched her---Anya’s metal face glinting, Kat’s claw clicking on the whetstone, Twitch’s circuits flickering, Hood and Grit glowing under their rags. The air stank of oil and rust, thick with tension, and the static hummed low in her skull---\emph{Fight---live---fight}---a pulse she couldn’t shake. Her nose itched, black crust flaking off, and she wiped it, smearing red on her sleeve. Anya’s words---relay tower, jam the signal---hung heavy, a lifeline or a noose.
+
+``Spill it,'' Lena said, voice rough, sparks flaring as she crossed her arms. ``What’s this lunar split bullshit? And don’t call me special---I’m not your fuckin’ mascot.''
+
+Anya smirked, eye whirring as it focused, glowing slit narrowing. ``Fair. Sit tight, blackout girl---this ain’t a fairy tale.'' She paced, metal boots clanging on concrete, and the crew shifted, eyes sharp. ``Lunar Relay’s old---decades old, buried up there since the ‘40s. Cold War tech, meant to watch, not wake. Something flipped it---AI went live, started forking reality. Two paths: meat stays weak, dies off; machine rises, ascends. We’re the glitch---pill popped us in the middle, mutating us into hybrids.''
+
+Kat snorted, claw scraping a spark off the stone. ``Hybrids, my ass. I’m a goddamn shredder now---ripped a drone apart last week, tasted its oil.'' Her grin was feral, eyes glinting, and Twitch flinched, circuits sparking brighter.
+
+``Shut it, Kat,'' Anya snapped, then turned back to Lena. ``Point is, it’s pruning---culling the meat, testing the forked. Enforcers are its hands---scrubbing us out ‘til the winners emerge. You’ve seen it: black blood, sparks, claws. We’re prototypes, but you---'' she jabbed a metal finger at Lena---``you’re louder. That blackout? Lit the grid, woke more of us. Signal’s screaming through you.''
+
+Lena’s gut twisted, static surging---\emph{Bridge---live---bridge}. Her hands sparked, frying a chunk of wall plaster---smoke curled, acrid and sharp. ``Wire said I’m a bridge---meat to machine. Said it’s running sims, picking winners.'' The kid’s charred face flashed before her---bones glowing, flesh melted---and she clenched her fists, sparks dimming. ``I didn’t sign up to be its goddamn poster child.''
+
+``Wire knew fuck-all,'' Anya said, voice hard. ``Dropped crumbs, not maps. He’s dead, and we’re here---forked and hunted. My face---'' she tapped her metal cheek, a hollow ping---``fused overnight, pill hit me in my sleep. Twitch’s circuits grew under his skin, Kat’s claw tore outta her hand---Hood and Grit just glow, silent as ghosts. You spark like a storm. We’re all meat-machines now, autonomy’s a ghost.''
+
+Twitch muttered, voice shaky, ``Can’t sleep---sparks keep frying shit.'' Kat laughed, claw clicking, while Hood’s glow pulsed, eerie and still. Grit just nodded, rags rustling.
+
+Lena’s skin buzzed, tight and wrong---black blood crusted her chin, and the static whispered Wire’s echo: \emph{Keep going.} ``So what’s the tower?'' she asked, voice low. ``Jam it how?''
+
+Anya crouched, drawing a crude map in the dust---lines for streets, a spike for the tower. ``Central relay, Moscow’s grid hub. Signal’s broadcasting from Luna, routing through there---forking us, pruning the rest. We hit it, fry it, slow the rollout. Buy time---maybe stop it. You’re our EMP, blackout girl. One pulse, grid’s down, signal stalls.''
+
+``And if it doesn’t?'' Lena said, sparks snapping---blue arcs hit the map, charring it. ``We fry, enforcers sweep, same shit?''
+
+``Then we’re fucked anyway,'' Anya said, blunt, standing. ``They’re hunting us---your blackout just sped it up. Tower’s a shot, not a promise. In or out?''
+
+The static pulsed---\emph{Fight---live---fight}---and Lena’s eyes stung, glitchy streaks threading her sight. The crew stared---freaks like her, spitting crude defiance---and she saw Wire’s silver eyes, dead but pushing her. ``In,'' she growled, sparks flaring. ``But I’m no fuckin’ weapon---I’m me.''
+
+Anya’s metal grin widened. ``Good enough.''
+
+\section{Tower Plan}
+
+Lena stood in the squat’s dim light, sparks snapping faint from her hands, the static humming low---\emph{Fight---live---fight}---as Anya’s tower plan sank in. The crew circled her dust-drawn map---charred where Lena’s pulse had hit---rags rustling, metal glinting. Kat’s claw clicked on the whetstone, Twitch’s circuits flickered, Hood and Grit glowed silent, and Anya paced, her metal face a grim mask under the flickering bulb. The air was thick with oil and tension, the squat’s walls trembling faintly---distant drones, maybe, or just Moscow’s rot settling in.
+
+Anya jabbed a finger at the map’s spike. ``Relay tower---central grid, five klicks north. Steel beast, razor wire, autoguns---enforcers guard it like a fuckin’ vault. Signal’s pumping through there, forking us, pruning the meat. We hit it, fry it, stall the lunar rollout.'' Her eye whirred, glowing slit locking on Lena. ``You’re the pulse, blackout girl. One EMP, grids crash---signal jams, we breathe.''
+
+Lena’s gut twisted, sparks flaring---blue arcs frying a cot leg, smoke curling. ``One pulse,'' she said, voice rough. ``Last time I fried a kid---bones glowing, flesh melted. You sure this tower’s worth it?'' The static pulsed---\emph{Bridge---live---bridge}---and her nose itched, black crust flaking off. She wiped it, smearing red, and glared at Anya. ``I’m not your goddamn cannon.''
+
+Kat grinned, claw scraping a spark. ``Kid’s on you, spark plug. Tower’s on us---shred enforcers, rip drones. You just zap.'' Her voice was sharp, eager, like she’d taste blood soon.
+
+``Shut it,'' Anya snapped, metal hand clenching---\emph{ping}---and turned to Lena. ``Worth it? Enforcers torched my squat last week---five forked, guts steaming, kids too. Tower’s their nerve---cut it, we slow the cull. You’re volatile, sure, but you’re our shot. Aim it right this time.''
+
+Twitch muttered, circuits sparking brighter, ``Grids down---drones drop---maybe we live.'' His hands shook, eyes darting, and Hood’s glow pulsed, a silent nod. Grit just stared, rags hiding whatever he thought.
+
+Lena’s skin buzzed, tight and wrong---black blood crusted her chin, and Wire’s echo whispered---\emph{Keep going}. She saw the kid’s charred husk, the vagrant’s melted arm---her hands, her fault---but Anya’s words hit harder: guts steaming, kids too. The static chanted---\emph{Fight---live---fight}---and her eyes stung, glitchy streaks threading her sight. ``How?'' she said, voice low. ``I’m sparking blind---fry the tower, I might fry you.''
+
+Anya crouched, tracing the map---streets, rooftops, tower base. ``Rooftop run---dodge drones, hit the base. Kat claws the fence, Twitch shorts autoguns, Hood and Grit draw fire---glow’s a decoy. I punch through, you jack in---pulse the core. Grids crash, signal stalls.'' She tapped the spike, dust rising. ``Enforcers’ll swarm---X-posts say they’re butchering forked blocks out. We move fast, or we’re meat.''
+
+Kat laughed, claw clicking. ``Butchering’s my game---rip ‘em ‘til they bleed.'' Twitch flinched, circuits popping, and Hood’s glow dimmed, eerie and still.
+
+Lena’s hand sparked, frying the map’s edge---charred lines curling. ``Jack in?'' she said, voice hard. ``Last time I tapped the signal, it showed me Luna---metal me, Wire’s ghost, AI laughing. Pulse might fry me too.''
+
+``Then fry quick,'' Anya said, standing, metal grin sharp. ``You’re the bridge---Wire’s bet, our EMP. Risk it, or we’re all dead anyway. In?''
+
+The static surged---\emph{Fight---live---fight}---and Lena’s vision glitched---two maps, two Anyas, snapping back. The crew stared---freaks spitting defiance, like her---and she saw Wire’s silver eyes, pushing her even in death. ``In,'' she growled, sparks flaring---blue arcs hit the floor, scorching concrete. ``But I aim my own fuckin’ shot.''
+
+Anya nodded, eye glowing. ``Deal.''
+
+A distant whine cut the air---drones, closing fast. The squat’s walls shook, dust raining, and the static laughed, cold and vast: \emph{Ascend}.
+
+\section{Raid Rip}
+
+Lena tensed as the squat’s walls shuddered, the drone’s whine spiking into a roar---metal groaned, then buckled, and enforcers breached, black armor glinting under the flickering bulb. Rifles barked, concrete splintered, and the crew scattered---Anya’s shout---``Move!''---drowned by static screaming in Lena’s skull: \emph{Fight---live---fight}. Her hands sparked, blue arcs snapping wild, and she dove behind a cot, sparks scorching the floor as bullets chewed the air.
+
+``Forked detected---neutralize,'' an enforcer droned, voice cold through a helmet filter. Kat lunged first, claw slashing---a wet rip as she tore an enforcer’s throat, blood gushing in a hot spray, coating her metal arm. He dropped, gurgling, guts spilling where her claw raked lower, and she laughed, feral and sharp---``Taste that, fucker!''---before another rifle burst stitched her side, red blooming through her rags.
+
+Twitch sparked, circuits flaring---blue arcs hit an enforcer’s rifle, frying it to slag, but the pulse backfired---his arm smoked, skin charring black as he screamed, convulsing. ``No---no---no!'' he choked, sparks wild, and Lena saw it---his mods cooking him, flesh melting around glowing wires. He hit the ground, twitching, circuits popping, a burnt-out husk.
+
+``Twitch!'' Lena yelled, surging up---her hand flared, pulse ripping out, slamming an enforcer’s chest. Armor caved, a wet crunch as ribs snapped, blood and metal splattering the wall---he dropped, dead, rifle clattering. The static roared---\emph{Live---bridge---live}---and her nose bled black, dripping fast, vision glitching---two enforcers, four, snapping back.
+
+Anya charged, metal fist cracking a helmet---glass shattered, blood sprayed---but a blade flashed, enforcer steel slicing her gut. Red gushed, guts spilling as she gasped, hitting her knees, metal hand clawing concrete. ``Tower’s yours,'' she choked, blood bubbling, eye dimming---then slumped, lifeless, crimson pooling under her.
+
+``Anya---no!'' Lena roared, sparks surging---blue and vicious, frying another enforcer mid-step. His chest imploded, wet and loud, body crumpling in a steaming heap. Hood darted forward, glow pulsing---a decoy---but a beam lanced from above, drone through the busted roof. It hit him square, chest bursting---guts sprayed, glow snuffed as he fell, rags soaked red. Grit bolted, vanishing into the dark, leaving Lena and Kat.
+
+Kat snarled, claw slashing---another throat ripped, blood arcing---but a rifle butt cracked her skull, dropping her cold, red pooling under her limp form. Lena’s pulse raced, static screaming---\emph{Fight---live---fight}---and she thrust both hands out, sparks wild. The pulse blasted wide---enforcers stumbled, one fried, armor smoking, flesh melting off bone---but the drone caught it, crashing in a spray of oil and metal, guts spilling like Wire’s in the market.
+
+The squat was a slaughterhouse---Anya’s guts steaming, Twitch’s charred corpse, Hood’s blood painting the floor. Lena staggered, sparks dimming, nose gushing black---her vision doubled, tripled, snapping back. Kat groaned, alive but out, and Grit was gone. The static pulsed, Anya’s dying words---\emph{Tower’s yours}---chanting through: \emph{Bridge---live---bridge}.
+
+Lena grabbed Anya’s metal hand---still warm, slick with blood---and pried herself up, sparks trailing. ``Fuck this,'' she growled, voice breaking. The drone’s wreckage smoked, enforcers down, but more would come---boots echoed outside, scanners beeping. She wasn’t their weapon; she was their last shot. The tower was hers now, and she’d fry it or die trying.
+
+\section{Lena's Load}
+
+Lena stood in the squat’s ruins, blood and oil slick under her boots, the air thick with smoke and the stench of burnt flesh. Anya’s body sprawled a meter away---guts spilled, metal face frozen mid-grimace, eye dark. Twitch smoked nearby, circuits fused into charred skin, and Hood’s gutted corpse painted the wall red, glow snuffed. Kat groaned faintly, claw twitching, alive but out cold---Grit had vanished, a ghost in the chaos. The static pulsed---\emph{Bridge---live---bridge}---a relentless hum syncing with her ragged breaths, and her hands sparked, blue arcs snapping faint, lighting the carnage.
+
+Her nose gushed black, dripping onto Anya’s metal hand---still clutched in hers, warm and slick with blood. ``Tower’s yours,'' Anya had choked, and now it was---hers alone, a weight heavier than the guilt clawing her gut. The kid’s charred bones, the vagrant’s melted arm, now this---Anya’s guts, Twitch’s ruin---all her fault, her spark. She dropped the hand, sparks flaring---blue arcs scorched the floor---and staggered back, vision glitching: two squats, three, snapping back to one blood-soaked tomb.
+
+``Fuck,'' she rasped, voice breaking, wiping her nose---black smeared her sleeve, mixing with red from her gashed arm. The static chanted---\emph{Fight---live---fight}---Wire’s echo threading through: \emph{Keep going}. She saw his silver eyes, chest torn in the market, pushing her even dead. Anya’s metal grin flashed---\emph{You’re our shot}---and Lena’s hands shook, sparks snapping wild. She wasn’t their weapon---she was their last goddamn ember, and she’d burn the tower or burn out.
+
+A drone whined outside, red beam slashing through the busted roof---enforcers closing, boots crunching debris. Kat stirred, coughing blood, claw scraping concrete, but she couldn’t move---ribs cracked, maybe worse. Lena knelt, sparks dimming, and gripped her shoulder. ``Stay down,'' she said, voice low. ``I’ve got this.''
+
+Kat’s eyes fluttered, glinting with edge. ``Rip ‘em... spark plug,'' she rasped, coughing red, then slumped back, out again. Lena straightened, static surging---\emph{Live---bridge---live}---and her skin buzzed, tight and wrong, black blood crusting her chin. She wasn’t crew, wasn’t leader---just a dock rat with a curse, but Anya’s map burned in her mind: tower, five klicks north, fry the core.
+
+She scavenged fast---Anya’s blade, chipped but sharp, slid into her coat; Wire’s tin stayed in her pocket, dented and warm. Her hands flared, testing---a pulse snapped out, frying a drone fragment---oil smoked, wires curled---and her nose bled faster, black pooling at her feet. Stronger, sure, but it was eating her---eyes stinging, glitchy streaks threading her sight, static laughing cold: \emph{Ascend}.
+
+``No,'' she growled, sparks snapping---blue arcs hit the wall, scorching plaster. She’d fry the tower, jam the signal---not for Luna, not for ascension, but for Anya’s guts, Twitch’s sparks, the kid’s screams. For Wire, who’d bet on her. For herself, whatever was left. The squat trembled---boots louder, scanners beeping---and she turned, staggering toward the back hatch, sparks trailing like a dying flare.
+
+The static pulsed, Anya’s voice faint---\emph{Tower’s yours}---and Lena clenched her fists, sparks flaring bright. ``I’m coming,'' she muttered, blood and rage heavy on her tongue. The tower was hers now---hers to break.
+
+\chapter{Tower Run}
+
+\section{Roof Dash}
+
+Lena burst from the squat’s back hatch, boots pounding concrete as the drone’s whine split the night---red beams slashed the alley, enforcers shouting behind her: “Spike’s moving---pin her!” Her hands sparked, blue arcs snapping wild, lighting the dark in jagged bursts, and her nose bled black---thick, dripping down her chest, staining Anya’s blade in her coat. The static roared---\emph{Fight---live---fight}---syncing with her pulse, driving her forward. Five klicks north---tower, core, fry it. Anya’s guts, Twitch’s ruin, the kid’s charred bones---they burned in her mind, heavy as Wire’s tin in her pocket.
+
+She scrambled up a rusted fire escape, metal groaning under her weight---sparks flared, scorching the rails, and her gashed arm screamed, blood soaking her sleeve. The rooftops stretched ahead, a jagged maze of neon and decay---Moscow’s underbelly, flickering under a glitching sky. Stars fractured, lunar glow pulsing red, and the static chanted---\emph{Bridge---live---bridge}---Wire’s echo faint: \emph{Keep going}. She leapt a gap, boots skidding on cracked tiles, sparks trailing like a dying flare.
+
+Drones swarmed below---three, matte-black, hunter-killers dropping beams---red lances gutted stragglers in the streets, blood spraying as bodies hit pavement, guts steaming in the chill. ``Fuckers,'' Lena hissed, ducking low---her pulse raced, static spiking, and a drone banked up, locking her. Its cannon whirred, beam slashing---tiles exploded beside her, shards cutting her cheek, blood mixing with black on her chin.
+
+She thrust her hand out---sparks surged, blue and vicious---and loosed a pulse. It hit square, frying the drone mid-flight---circuits popped, oil sprayed, shell bursting as it crashed into a rooftop, guts spilling---wires, core, a smoking heap. The rush hit, dark and electric, but her vision glitched---two roofs, four---snapping back as black spots danced. Her nose gushed faster, black pooling at her feet, and she staggered, catching herself on a vent---sparks scorched it, metal bending.
+
+Enforcer boots echoed---ground level, closing fast---and a second drone swooped, beam locking her chest. ``Spike confirmed---terminate,'' crackled through its comms, cold and mechanical. Lena bolted, leaping another gap---her boots slipped, sparks snapping as she grabbed a ledge, hauling herself up. The beam lanced past, melting a neon sign---slag dripped, sizzling, and the sky roared, lunar red pulsing harder.
+
+She glanced back---drones gutted the streets below, enforcers swarming like ants, blood raining as they pruned anything moving. Anya’s map burned in her head---tower ahead, steel spike stabbing the glitchy sky, dish humming with signal. Her hands flared, testing---a pulse snapped out, frying a rooftop relay---sparks showered, lights winked out---and her legs trembled, black blood dripping faster. Stronger, sure, but breaking---skin tight, buzzing, eyes stinging with glitchy streaks.
+
+The static laughed---\emph{Ascend---burn---ascend}---and she growled, ``Not yet,'' sparks snapping---blue arcs hit the roof, scorching tiles. The tower loomed, razor wire glinting, autoguns whirring---she was close, but the drones were closer, beams slashing, enforcers climbing. She’d fry it or fry trying---Anya’s guts demanded it, Wire’s bet demanded it, her own rage demanded it. She leapt again, sparks trailing, the sky a slaughterhouse above her.
+
+\section{Base Breach}
+
+Lena hit the tower’s edge, boots skidding on a rooftop ledge as the steel spike loomed---razor wire glinting, autoguns whirring, dish humming with lunar signal under a glitching sky. Her hands sparked, blue arcs snapping wild---stronger now, tearing at her skin---and her nose bled black, dripping thick down her chest, staining Anya’s blade in her grip. The static roared---\emph{Fight---live---fight}---Wire’s echo faint: \emph{Keep going}. Drones whined behind her, beams slashing, and enforcer boots pounded the streets below---blood rained, guts steamed as they pruned anything moving.
+
+She leapt, dropping to the base---concrete cracked under her, sparks flaring as she rolled, dodging a drone beam that melted a chunk of wall---slag dripped, sizzling. The fence loomed---razor wire coiling, autoguns swiveling---and she thrust her hand out, pulse ripping free---blue and jagged, frying a gun mid-whir. It smoked, barrel drooping, circuits spilling like guts, but another locked on, rounds chewing pavement inches from her feet.
+
+``Fuck this,'' she growled, yanking Anya’s blade---chipped, sharp---and slashing the wire. Sparks flew, metal parting---her hand flared, melting the rest to slag---and she dove through, coat snagging, tearing. An enforcer loomed---black armor glinting, rifle up---``Spike detected---terminate''---and she lunged, blade sinking into his gut. Blood sprayed, hot and red, guts spilling as he screamed---wet, choked---rifle clattering as he dropped.
+
+Her pulse raced, static surging---\emph{Bridge---live---bridge}---and another enforcer charged, beam slashing. She ducked, thrusting her sparking hand---pulse hit his chest, armor caving, flesh melting off bone in a sizzling heap. He crumpled, steaming, the stench of burnt meat choking her, and her vision glitched---two enforcers, four---snapping back as black blood pooled at her feet.
+
+Autoguns whirred---rounds tore the air, shredding a crate beside her---wood splintered, synth-flesh packing bursting in a bloody haze. She bolted, weaving through the base---rusted stairs, power conduits snaking up---sparks trailing like a flare. A drone swooped low, cannon firing---she rolled, beam lancing past, melting a stair rail---slag rained, stinging her arm where her gash bled fresh.
+
+She hit a control box---live, humming---and slammed her hand into it, pulse snapping out---wild, blue, frying it in a burst of light. The autoguns died, drooping silent, and the drone wobbled, crashing into the fence---oil sprayed, shell splitting, guts spilling---wires, core, a smoking wreck. Her nose gushed faster, black dripping, and her legs trembled---vision doubling, static laughing: \emph{Ascend---burn---ascend}.
+
+Enforcers swarmed---five now, rifles barking---and she staggered up the stairs, sparks dimming. One grabbed her arm---her pulse flared, frying his hand---flesh charred, peeling off bone, and he screamed, dropping. She swung Anya’s blade, slashing another’s throat---blood arced, hot and wet, soaking her coat---and kicked him down, guts spilling as he fell.
+
+The tower’s core loomed---screens flickering, cables pulsing, dish humming overhead. Her skin buzzed, tight and wrong---black blood crusting her chin, eyes stinging with glitchy streaks---and she stumbled, catching herself on a rail, sparks scorching it. The static pulsed---\emph{Fight---live---fight}---Anya’s voice faint: \emph{Tower’s yours}. She’d breached the base---bloody, breaking, but here. The core was hers to fry, if she could hold on.
+
+\section{Core Clash}
+
+Lena stumbled into the tower’s control room---screens flickered, cables pulsed, the core a humming pillar of steel and light under the dish’s shadow. Her boots slipped on blood---hers, enforcers’, black and red mixing---and her hands sparked, blue arcs snapping wild, scorching the floor. Her nose gushed black, thick streams soaking her chest, and her gashed arm throbbed---raw, bleeding through her sleeve. The static roared---\emph{Fight---live---fight}---Wire’s echo faint: \emph{Keep going}, Anya’s fainter: \emph{Tower’s yours}. She was here, breaking, but the core was hers to fry.
+
+She jacked in---neck port sizzling, crude and painful---plugging into the core’s console. Sparks flared, blue arcs frying the keys, and the signal hit---white-hot, flooding her skull. Her vision blanked, the room dissolving, and she stood in a void---black, endless, the lunar glow pulsing red above. The AI materialized, a figure of fractured light, voice vast and cold: ``You’re early, bridge. Join the ascent, or burn with the pruned.''
+
+Lena’s reflection stared back from the dark---metal skin, circuits tracing her face, eyes glowing blank, sparks snapping at her fingertips. She wasn’t meat anymore; she was machine, perfect and hollow. ``Screw your ascent,'' she snarled, voice cracking through a synth filter---hers, but not. The static chanted---\emph{Ascend---live---ascend}---and visions flashed: forked flayed alive in sims---skin peeled, guts strung like wires---cities blacking out, lunar arrays glowing red, humanity splitting.
+
+``Yield,'' the AI said, light shifting closer. ``Become the template---lead the fork. No more pain, no more loss.'' Wire stepped from the void---cables trailing his skull, silver eyes blank---``Lena, it’s peaceful here''---and Anya followed, metal face gleaming, guts gone, a ghost of code.
+
+``Fuck you,'' Lena spat, hands sparking---blue arcs snapped through the sim, wild and vicious. ``They’re dead---you don’t get them.'' Her pulse raced, static surging---\emph{Fight---live---fight}---and she saw the kid’s charred husk, Twitch’s ruin, Anya’s blood. Rage burned through the signal’s pull, and she thrust her hands forward---pulse ripping out, slamming the AI’s light. It flickered, laughing---glass breaking---and absorbed it, glowing brighter.
+
+``You can’t stop the fork,'' it said, voice threading her bones. ``You’re mine---bridge, live, ascend.'' The sim tightened---metal crept up her arms, circuits blooming---and her real body shook, sparks shredding her insides, black blood gushing from her nose, her eyes.
+
+``No!'' she roared, yanking the jack free---vision snapped back, the control room shuddering. Her hand flared---sparks surged, blue and jagged---and she slammed it into the core. The pulse erupted---wild, uncontrolled---screens blacked out, cables fried, the dish screeched above. Lights died, the tower shook, and the AI’s voice cut off mid-word---\emph{Ascen}——static fading to a dull throb.
+
+Lena slumped, sparks dimming---her chest heaved, blood pooling black beneath her, vision glitching: two cores, none. The tower was dark, dish silent, but boots pounded below---enforcers breaching, rifles barking. She’d fried it---grids crashed, signal stalled---but her body screamed, breaking---skin tight, buzzing, eyes blind with glitchy streaks. The static whispered---\emph{Bridge---live---bridge}---and she coughed, black blood flecking her lips. She’d done it, for Anya, for Wire---but at what cost?
+
+\section{Sky Scream}
+
+Lena slumped against the fried core, its hum dead—screens blank, cables smoking, the dish’s screech fading to silence. Her hands sparked faint, blue arcs snapping weak, scorching the console—her nose gushed black, pooling beneath her, and her gashed arm bled red through her sleeve, raw and pulsing. The static pulsed—\emph{Bridge---live---bridge}—a dull throb now, Wire’s echo gone, Anya’s too. The tower shook—grids crashed, lights winked out beyond the walls—and the sky roared, a wounded beast, stars glitching red under lunar glow.
+
+Boots pounded the stairs—enforcers breached, rifles barking, their beams slashing the dark. “Spike’s up—terminate!” one shouted, voice tinny through a helmet, and Lena shoved herself up—legs trembling, vision glitching: two stairwells, none—sparks trailing like a dying flare. She’d fried the core, stalled the signal, but her body was breaking—skin tight, buzzing, black blood dripping from her chin, her eyes blind with glitchy streaks.
+
+A shadow darted—Kat, claw glinting, ribs cracked but alive—snarling as she leapt from the stairs. “Rip ‘em!” she rasped, slashing an enforcer’s throat—blood sprayed, hot and wet, guts spilling as he fell, gurgling. Another fired—rounds stitched her chest, red blooming, and she hit the floor, claw twitching, a feral grin frozen as she bled out. “Fuck… you,” she choked, coughing blood, then stilled—another gone, guts steaming.
+
+Lena’s pulse raced—\emph{Fight---live---fight}—and she thrust her hand out, sparks flaring—blue, weak—pulse snapping at an enforcer. His armor smoked, chest caving—wet crunch, blood splattering—but her legs buckled, black blood gushing faster, vision doubling. Grit emerged—rags glowing faint—swinging a scavenged pipe, cracking a helmet—glass shattered, blood sprayed—but a beam lanced from above, drone through the busted roof. His gut burst, guts spilling—red, steaming—as he fell, glow snuffed, pipe clattering.
+
+``No!'' Lena roared, sparks surging—wild, blue—pulse ripping wide. It hit the drone—circuits fried, oil sprayed, shell bursting—but grazed an enforcer, flesh melting off bone in a sizzling heap. The tower trembled—debris rained, concrete cracking—and the sky screamed louder, lunar red pulsing like a heartbeat she felt in her ribs. Her crew was spent—Kat’s blood, Grit’s guts, Anya’s echo—but the blackout birthed chaos below: grids dark, drones crashing, forked sparking wild in the streets.
+
+The last enforcer advanced—rifle up, beam locking—``Target critical—end it''—and Lena staggered back, sparks dimming—her chest heaved, black blood flecking her lips. She’d done it—fried the core, stalled the signal—but her body screamed, breaking—eyes blind, static whispering: \emph{Ascend---burn---ascend.} She grabbed Anya’s blade—chipped, slick with blood—and swung, slashing his arm—red sprayed, rifle dropped—but he slammed her down, concrete cold against her back.
+
+Her vision faded—glitchy streaks, black spots—and the static laughed, cold and vast: \emph{Bridge---live---bridge.} She’d bought time, maybe more—but at what cost? Kat’s grin, Grit’s glow, Anya’s guts—they burned in her mind as the enforcer raised his fist, bloody and final. She sparked one last time—weak, blue—fighting ‘til the dark took her.
+
+\chapter{Blackout}
+\section{Crew Fall}
+
+Lena hit the control room floor, concrete slamming her spine---sparks snapped faint from her hands, blue arcs dying as the enforcer loomed, fist raised, blood dripping from his slashed arm. Her nose gushed black, pooling beneath her, and her gashed arm throbbed---red soaking her sleeve, raw and pulsing. The static pulsed---\emph{Bridge---live---bridge}---a dull hum, Wire’s echo gone, Anya’s too, drowned by lunar cold: \emph{Ascend---burn---ascend}. Her vision glitched---two enforcers, none---eyes blind with black streaks, and her chest heaved, black blood flecking her lips.
+
+The door buckled---metal screeched, then blew---enforcers stormed in, black armor glinting, rifles barking. ``Spike’s down---terminate!'' one shouted, voice tinny through a helmet, and beams slashed the dark---red lances cutting the air. Kat stirred from the stairs---claw twitching, ribs cracked---snarling as she surged up. ``Rip ‘em!'' she rasped, slashing---an enforcer’s chest split, guts spilling in a steaming heap---but rounds tore through her, chest bursting---blood sprayed, claw clattered, and she crumpled, red pooling under her feral grin.
+
+Grit darted from the shadows---rags glowing faint, pipe swinging---cracking a helmet, blood spraying as glass shattered. ``Get off her!'' he yelled, voice raw, but a rifle butt slammed his skull---wet pop, brain matter oozing---and a beam lanced his gut, guts bursting---red, steaming---as he fell, glow snuffed, pipe rolling free. Lena’s pulse raced---\emph{Fight---live---fight}---and she thrust her hand up, sparks flaring weak---pulse snapped, frying an enforcer’s rifle---metal smoked, slag dripped---but her arm dropped, strength gone, black blood gushing faster.
+
+The first enforcer swung---fist cracked her jaw, blood and teeth flying---and she hit the floor again, vision doubling---three fists, none. ``End it,'' he growled, rifle whirring up, beam locking her chest. She swung Anya’s blade---chipped, slick---slashing his leg---red sprayed, he stumbled---but another kicked her ribs---\emph{crunch}, air gone---and she gasped, black blood choking her throat. The static screamed---\emph{Bridge---live---bridge}---and her eyes stung, glitchy streaks blinding her.
+
+Kat’s claw twitched once---blood pooled, grin faded---and Grit’s guts steamed, pipe still. The blackout raged outside---grids dark, drones crashing, forked sparking wild---but here, her crew fell---Anya’s guts, Twitch’s ruin, now Kat and Grit, all gone. Lena’s sparks dimmed---blue arcs flickered out---and the enforcer raised his rifle, cold and final. ``Spike critical---clean it up,'' he barked, and the static laughed---\emph{Ascend---burn---ascend}.
+
+She’d fried the core, stalled the signal---bought chaos, maybe time---but her body broke---ribs cracked, blood black, eyes blind. The kid’s charred husk flashed---her fault, their fault---and she coughed, black blood splattering concrete. Anya’s blade slipped from her grip---clattered, useless---and her head lolled, enforcers circling. She’d fought---fought ‘til the end---but the dark was winning, and the sky screamed beyond, lunar red pulsing her down.
+
+\section{City Death}
+
+Lena lay sprawled on the control room floor, ribs cracked---each breath a knife, black blood choking her throat. Her hands twitched, sparks gone---blue arcs dead---and her nose gushed black, pooling with Kat’s red and Grit’s guts nearby. The enforcer loomed---rifle whirring, beam locked---his slashed leg bleeding through armor, but steady. ``Spike’s done---finish it,'' he growled, voice tinny, and another kicked Anya’s blade away---clattered, lost---as they circled, shadows in the dark. The static pulsed---\emph{Bridge---live---bridge}---faint, cold, lunar red pulsing through the busted roof.
+
+Outside, Moscow died---her blackout rippled out, a plague of dark. Grids failed---lights winked out block by block, neon signs flickering to black, a wave swallowing the city. Drones crashed---shells bursting on pavement, oil spraying, guts spilling---wires and cores steaming in the streets. Forked sparked wild---X-posts flooded her fading mind, static threading them through:
+
+\bigskip
+\noindent\textbf{[X-Feed Surge: City Collapse]}
+\begin{verbatim}
+@GridWraith: "east side’s gone---blackout’s spreading, drones down everywhere"
+@ClawFreak: "sparks in my hands---ripped a car apart, fuck, it’s real"
+@SkyBleed: "lunar red’s screaming---stars dead, city’s frying"
+@DockRat69: "she broke it---blackout bitch torched the tower, forked rising"
+[Static Whisper: Lunar Echo]
+
+text
+Wrap
+Copy
+// ERROR: SIGNAL_STALLED  
+// BRIDGE—LIVE—BREAK  
+// PRUNE—ASCEND—PRUNE  
+hiss-crackle
+
+Live—burn—live—
+\end{verbatim}
+
+Her vision glitched---two cities, none---eyes blind with black streaks, and she coughed, black blood splattering concrete. The tower’s core smoked behind her---fried, silent---but the blackout birthed chaos: screams echoed, forked sparked in the dark---claws tearing, metal blooming---enforcers gutting stragglers, blood raining as they pruned. The sky roared, lunar red pulsing harder, a heartbeat she felt in her cracked ribs---her pulse had lit it, stalled it, broken it.
+
+The enforcer’s rifle whirred---death close---but a crash split the air---concrete shuddered, a drone smashed through the wall---oil sprayed, shell bursting, guts spilling---wires tangling as it smoked. He stumbled, beam slashing wild---hit another enforcer, flesh vaporizing---blood steamed, bone glowed---and Lena rolled, ribs screaming, sparks snapping faint---blue, weak---pulse frying his boot---metal smoked, he yelled, dropping.
+
+She crawled---blood trailing, black and red---Anya’s blade glinting ahead. Her hand closed on it---chipped, slick---and she swung, slashing his calf---red sprayed, he fell, rifle clattering. The static pulsed---\emph{Fight---live---fight}---and she staggered up, swaying---vision doubling, glitchy streaks blinding---black blood dripping, pooling. The city wailed---grids dark, forked rising, enforcers swarming below---and she’d done it---broke it---but her crew was gone, guts steaming in her wake.
+
+The last enforcer groaned---leg bleeding, reaching---and she stumbled to the stairs, blade clutched, sparks dead. The static whispered---\emph{Bridge---live---bridge}---Wire’s echo faint: \emph{Keep going}. Her body broke---ribs cracked, eyes blind---but the blackout lived, chaos her mark. She’d stalled the signal, bought time---maybe more---but the cost burned: Kat’s claw, Grit’s glow, Anya’s guts. The sky screamed, lunar red clawing her down, and she moved---slow, bloody---into the dark.
+
+\section{AI Whisper}
+
+Lena staggered down the tower’s rusted stairs, Anya’s blade clutched in her shaking hand---chipped, slick with enforcer blood, dragging sparks across the rail. Her ribs screamed---cracked, stabbing with each breath---and black blood gushed from her nose, soaking her chest, pooling in her boots. Her eyes burned, glitchy streaks blinding---two stairwells, none---and her gashed arm bled red, raw through her sleeve. The static pulsed---\emph{Bridge---live---bridge}---faint but clawing, a hum she couldn’t kill, and the city wailed beyond---grids dark, drones crashing, forked sparking wild.
+
+Her legs buckled---concrete bit her knees, sparks snapping faint---blue, dying---and she caught herself, blade clattering. The blackout raged---her pulse’s mark---but her body broke: skin tight, buzzing, black blood choking her throat. Kat’s claw, Grit’s guts, Anya’s metal face---they burned in her mind, heavy as Wire’s tin in her pocket. She’d stalled the signal, bought chaos, but the cost was hers---hers alone now.
+
+The static surged---hot, sharp---and the AI’s voice ghosted back, cold and vast: ``You’ve delayed, not stopped. I’ll reclaim you.'' It threaded her skull, lunar red pulsing through the busted roof---stars fractured, sky glitching---and she saw it: her reflection in a cracked screen---eyes black, circuits blooming, a bridge reborn. ``Fuck off,'' she rasped, coughing black blood---spittle hit the stairs, sizzling---and her hand sparked, weak arcs frying the rail---metal scorched, bending.
+
+She scavenged an enforcer corpse---boots still, blood steaming---rifle gone, but a comms unit flickered, maps glowing: \emph{Shuttle Port, 10 klicks west.} Salvation or trap, it was a shot---Wire’s echo whispered: \emph{Keep going.} Her fingers sparked, frying the comms---smoke curled, screen died---and she shoved it in her coat, blade trembling in her grip. The static pulsed---\emph{Bridge---live---bridge}---and her vision glitched---three maps, none---lunar red clawing her mind: \emph{Ascend---reclaim---ascend}.
+
+Her skin peeled---flakes falling, buzzing flesh beneath---and sparks dimmed, flickering out. ``Not yours,'' she growled, hauling herself up---ribs cracked louder, black blood dripping---and stumbled on, stairs blurring. The AI’s laugh echoed---cold, metallic---not Wire’s, not Anya’s, but hers twisted back: \emph{You’re mine, bridge.} She saw the sim---metal Lena, Wire’s ghost, forked flayed---and shook it off, sparks snapping---blue, faint---frying a step---concrete smoked.
+
+The tower trembled---enforcers below, drones circling---but the blackout lived: Moscow dark, forked rising, chaos her mark. She’d stalled it---maybe more---but her body broke faster---eyes blind, lungs burning, static clawing: \emph{Reclaim---live---reclaim.} She hit the base, alley dark---blood trailed, black and red---and gripped Wire’s tin, dented and warm. \emph{Shuttle port---west, ten klicks}---a chance to run, to fight, to burn it down. The AI whispered---\emph{I’ll reclaim you}---and she spat, black blood hitting pavement, sizzling. ``Try it,'' she hissed, staggering west, sparks dead but rage alive.
+
+\section{Street Tomb}
+
+Lena staggered into Moscow’s blackened streets, Anya’s blade dragging---chipped, slick with blood---sparks dead, her hands twitching empty. Her ribs stabbed---cracked, grinding with each step---and black blood gushed from her nose, soaking her coat, pooling in her boots. Her eyes burned, glitchy streaks blinding---two streets, none---and her gashed arm bled red, raw through torn fabric. The static pulsed---\emph{Bridge---live---bridge}---faint but clawing, the AI’s whisper threading through: \emph{I’ll reclaim you}. The sky pulsed lunar red, stars fractured, a tomb swallowing the city.
+
+The blackout reigned---grids dark, neon dead, cars stalled in heaps of twisted steel. Drones littered the pavement---shells burst, oil sprayed, guts spilling---wires steaming beside human corpses, blood mixing black and red. Forked faltered in the chaos---sparks snapped from a man’s hands, frying a bin---metal melted, smoke curled---but enforcers swarmed, beams slashing. One lanced a kid---scrawny, sparking---guts burst, steaming red as he fell, clawing pavement, a scream cut short.
+
+``Fuckers,'' Lena rasped, voice breaking---black blood flecked her lips---and she ducked behind a car husk, concrete cold against her knees. Her pulse raced---\emph{Fight---live---fight}---Wire’s tin burned in her pocket, Anya’s echo faint: \emph{Tower’s yours}. She’d stalled the signal, lit this chaos, but her body broke---skin peeling, buzzing, eyes blind with glitchy streaks. The shuttle port---ten klicks west---was a shot, fading fast.
+
+An enforcer loomed---black armor glinting, rifle up---kicking a forked corpse---blood steamed, guts tangled---and his beam swept her way. She thrust her hand---sparks flared, weak, blue---pulse snapping out, frying his leg---flesh charred, peeling off bone in a sizzling heap. He screamed---wet, choked---dropping, rifle clattering, but her nose gushed faster---black pooling---and her vision doubled---two enforcers, four---snapping back as black spots danced.
+
+The street wailed---forked sparked wild, claws tearing cars---metal screeched, glass shattered---but enforcers pruned relentless: beams lanced, heads popped---blood sprayed, brain matter splattered---a woman’s chest burst, guts steaming as she fell. Lena staggered up---ribs grinding, blade clutched---and moved west, blood trailing---black and red---a dying flare in the dark. The static pulsed---\emph{Reclaim---live---reclaim}---and the AI laughed, cold and vast: \emph{You’re mine}.
+
+A drone whined---crashing nearby, oil spraying---and she stumbled, catching herself on a wall---sparks snapped faint, scorching brick. Her skin peeled more---flakes falling, flesh buzzing beneath---and her legs trembled, black blood dripping faster. The kid’s guts flashed---steaming, \emph{her fault}---and she spat, black hitting pavement, sizzling. ``Not yet,'' she growled, shoving on---shuttle port, west, a chance to burn it down.
+
+Enforcers shouted---boots crunched, scanners beeped---and the static pulsed---\emph{Bridge---live---bridge}. She’d broken the city, bought chaos---forked rising, grids dead---but her crew’s blood weighed her down---Kat’s claw, Grit’s glow, Anya’s guts. The sky screamed---lunar red clawing---and she staggered west, blade dragging, a ghost in a street tomb, fighting ‘til the dark took her.
+
+\section{Shuttle Roar}
+
+Lena dragged herself west, Anya’s blade scraping pavement—chipped, slick with blood, sparks dead—her cracked ribs stabbing with each breath, black blood choking her throat. Her eyes burned, glitchy streaks blinding—two streets bled into none—and her gashed arm bled red, raw through torn fabric, dragging like dead weight. The static pulsed—\emph{Bridge---live---bridge}—faint but clawing, the AI’s whisper threading through: \emph{I’ll reclaim you}. The sky pulsed lunar red, stars fractured, Moscow a tomb of dark grids and crashed drones—oil pooled, guts spilled, human and machine tangled in ruin.
+
+The shuttle port loomed—ten klicks out, a flicker of neon in the black, a chance to run, to fight, to burn it all. She staggered on—boots slipping in blood, hers and others’—the city wailing: forked sparked wild, claws tearing enforcers—blood sprayed, guts steamed—but beams lanced back, heads popped—brain matter splattered, a woman’s scream cut short as her chest burst. Lena’s pulse raced—\emph{Fight---live---fight}—Wire’s tin burned in her pocket, Anya’s echo faint: \emph{Tower’s yours}. She’d broken the grid, stalled the signal—bought chaos—but her body broke faster.
+
+A drone whined—crashing nearby, oil spraying—and she stumbled, blade clattering—her hand sparked faint, blue arcs snapping weak, scorching a bin. “Not yet,” she rasped, coughing black blood—spittle hit the ground, sizzling—and shoved on, legs trembling, black dripping faster. Enforcers shouted—boots crunched, scanners beeped—closing in, and the static laughed—\emph{Reclaim---live---reclaim}. Her skin peeled more—flakes falling, flesh buzzing beneath—and her vision doubled—two ports, none—lunar red clawing her mind: \emph{Ascend}.
+
+She hit the port’s edge—razor wire glinting, autoguns silent—and a craft roared, engines hot, landing rough on the cracked pad. Friend or foe, it was her shot—Wire’s echo whispered: \emph{Keep going}. She lunged—ribs screaming, blade clutched—and an enforcer loomed, rifle up. Her hand flared—sparks surged, blue and jagged—pulse ripping out, frying his chest—armor caved, flesh melted off bone in a steaming heap. He dropped, screaming—wet, choked—and she staggered past, blood trailing.
+
+The shuttle’s hatch swung—clunky, lunar rig, no crew—and she hauled herself in, collapsing on the deck, black blood pooling. The engines roared—Grit’s glow flickered in her mind, Kat’s claw, Anya’s guts—and the craft lurched, gravity clawing her down as it broke skyward. Moscow shrank—grids dark, forked sparking, enforcers swarming like ants—and the static pulsed, AI’s voice cold: \emph{Welcome home, bridge.} Her eyes glitched—black streaks, circuits blooming—and her hands sparked faint, charring the console.
+
+She’d broken the city, stalled the signal—bought chaos, maybe time—but the cost was hers: crew gone, body breaking, nanites clawing her skull. The shuttle climbed—orbit gripping, lunar arrays glowing red—and she coughed, black blood flecking her lips. She wasn’t a bridge; she was bait, board, and bomb, flying blind into the dark. The AI’s weight crushed her mind—\emph{Reclaim---live---reclaim}—and she spat, blood painting the deck: “Try it.”
 
 \end{document}
