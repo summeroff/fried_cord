@@ -16,7 +16,7 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: >-
-            latexmk xetex fontspec titlesec setspace microtype parskip xcolor tocloft geometry kvoptions ltxcmds kvsetkeys mdframed zref needspace hyperref fancyhdr
+            latexmk xetex fontspec titlesec setspace microtype parskip xcolor tocloft geometry kvoptions ltxcmds kvsetkeys mdframed zref needspace hyperref fancyhdr polyglossia hyphen-russian graphics oberdiek xdvipdfmx epigraph nextpage
 
       - name: Install Pandoc
         uses: pandoc/actions/setup@v1
@@ -27,6 +27,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y fonts-roboto
+          sudo apt-get install -y fonts-noto-core fonts-dejavu texlive-lang-cyrillic
+          sudo fc-cache -f -v
 
       - name: Compile LaTeX to PDF with XeLaTeX
         run: |
